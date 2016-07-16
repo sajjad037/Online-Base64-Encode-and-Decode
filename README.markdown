@@ -1,4 +1,4 @@
-**THIS PROJECT IS NO LONGER MAINTAINED.  IT MOSTLY WORKS, BUT IF YOU RUN INTO ISSUES, CHECK OUT THE FORKS, PLEASE.  OR FIX IT YOURSELF.  CHEERS!**
+**THIS PROJECT IS NO LONGER MAINTAINED.  IT MOSTLY WORKS, I have created this prject as Part of my online blog Tutorails.BUT IF YOU RUN INTO ISSUES, CHECK OUT THE FORKS, PLEASE.  OR FIX IT YOURSELF.  CHEERS!**
 
 * * *
 
@@ -25,6 +25,8 @@ JSLint is complaining about the "unexpected use of '<<'/'|'".  No idea, suggesti
 
 Original code by [Nick Galbreath](http://stringencoders.googlecode.com/svn-history/r210/trunk/javascript/base64.js).
 Port by [Carlo Zottmann](http://github.com/carlo).
+Futher extended by [Sajjad Ashraf] (https://github.com/sajjad037)
+for more detail please read [Oline Base64 Encode and Decode] (http://visualstudiolearn.blogspot.com/2016/07/oline-base64-encode-and-decode.html)
 
 
 ## License
