@@ -25,9 +25,9 @@ JSLint is complaining about the "unexpected use of '<<'/'|'".  No idea, suggesti
 
 Original code by [Nick Galbreath](http://stringencoders.googlecode.com/svn-history/r210/trunk/javascript/base64.js).
 Port by [Carlo Zottmann](http://github.com/carlo).
-Futher extended by [Sajjad Ashraf] (https://github.com/sajjad037)
-for more detail please read [Oline Base64 Encode and Decode] (http://visualstudiolearn.blogspot.com/2016/07/oline-base64-encode-and-decode.html
-another example by [gabrieleromanato ] (https://jsfiddle.net/gabrieleromanato/qaght/)
+Futher extended by [Sajjad Ashraf] (https://github.com/sajjad037).
+for more detail please read [Oline Base64 Encode and Decode] (http://visualstudiolearn.blogspot.com/2016/07/oline-base64-encode-and-decode.html).
+another example by [gabrieleromanato ] (https://jsfiddle.net/gabrieleromanato/qaght/).
 
 
 ## License
