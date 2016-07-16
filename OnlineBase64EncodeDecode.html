@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Base64 Encode Decode</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://sites.google.com/site/visualstudiolearns/jquery.base64.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("#btnEncoder").click(function(){
+			bas64Conversion("txtEncoder", "Encode");
+		}); 
+		$("#btnDecode").click(function(){
+			bas64Conversion("txtDecoder", "Decode");
+		}); 
+		function bas64Conversion(elementId, conversionType)
+		{
+			var value =$("#"+elementId).val();
+			if(value.length > 0)
+			{
+				if(conversionType == "Encode")
+				{					
+					$("#"+elementId).val($.base64.encode(value));
+				}
+				else
+				{	
+					var decodedVal = $.base64.decode(value);
+					if(decodedVal.length > 0)
+						$("#"+elementId).val(decodedVal);
+					else
+						alert("Sorry unable to Decode, Can you Verify that you entered correct decode value.");
+				}
+			}
+			else
+			{	
+				alert($("#"+elementId).attr("placeholder"));
+			}
+		}
+	});
+</script>
+</head>
+
+
+<body>
+  
+<div class="container">
+  <form class="form-horizontal">
+<fieldset>
+<!-- Form Name --> <legend><u>Online Base64 Encoder and Decoder</u></legend><legend>&nbsp;</legend> <!-- Textarea -->
+<div class="form-group">
+<b><label class="col-md-4 control-label" for="txtEncoder">Base64 Encoder</label></b>
+  <br />
+<div class="col-md-4">
+<textarea class="form-control" id="txtEncoder" name="txtEncoder" cols="40" placeholder="please enter encoded string to decode" rows="10"></textarea>
+  </div>
+</div>
+<!-- Button -->
+
+<div class="col-md-4">
+ <input type="button" class="topsubsboxbutton" id="btnEncoder" value="Encode" name="btnEncoder"/>
+</div>
+<!-- Textarea -->
+<br />
+<div class="form-group">
+<b><label class="col-md-4 control-label" for="txtDecoder">Base64 Decoder</label></b>
+<br />
+<div class="col-md-4">
+<textarea class="form-control" id="txtDecoder" name="txtDecoder" cols="40" placeholder="please enter encoded string to decode" rows="10"></textarea>
+  </div>
+</div>
+<!-- Button -->
+
+<div class="col-md-4">
+<input type="button" class="topsubsboxbutton" id="btnDecode" value="Decode" name="btnDecode"/>
+  </div>
+</fieldset>
+</form>          
+</div>
+<center> for full detail read <a href="http://visualstudiolearn.blogspot.com/2016/07/oline-base64-encode-and-decode.html" > <b>visal studio learn</b></center>
+</body>
+</html>
